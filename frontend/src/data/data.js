@@ -78,7 +78,8 @@ export const services = [
     circle: "circle",
     main: "services",
     imgBox:'img-box',
-    imgSrc:'https://readlins.io/wp-content/uploads/2024/07/network-rotated.jpg',
+    imgSrc:'https://readlins.io/wp-content/uploads/2024/12/journal.jpg',
+    navLink:"https://www.sciencedirect.com/science/article/abs/pii/S0925838823022582"
   },
   {
     id: 2,
@@ -89,7 +90,8 @@ export const services = [
      circle: "circle",
     main: "services",
     imgBox:'img-box',
-    imgSrc:'https://readlins.io/wp-content/uploads/2024/07/business.jpg',
+    imgSrc:'https://readlins.io/wp-content/uploads/2024/12/geometry-5167943_1920.jpg',
+    navLink:"https://ieeexplore.ieee.org/document/9865283/authors#authors"
   },
   {
     id: 3,
@@ -100,6 +102,7 @@ export const services = [
     circle: "circle",
     main: "services",
     imgBox:'img-box',
-    imgSrc:'https://readlins.io/wp-content/uploads/2024/07/digitization.jpg',
+    imgSrc:'https://readlins.io/wp-content/uploads/2024/12/business-582912_1920.jpg',
+    navLink:"https://journals.aps.org/prb/abstract/10.1103/PhysRevB.106.085107"
   },
 ];

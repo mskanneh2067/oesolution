@@ -218,8 +218,8 @@ const Appointment = () => {
           </button>
         </div>
 
-        {/* Listing Related Doctors */}
-        <RelatedDoctors docId={docId} speciality={docInfo.speciality} />
+        {/* Listing Related Doctors
+        <RelatedDoctors docId={docId} speciality={docInfo.speciality} /> */}
       </div>
     )
   );

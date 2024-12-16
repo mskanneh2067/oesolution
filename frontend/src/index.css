@@ -4,19 +4,20 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
+* {
   font-family: Outfit;
 }
-.active hr{
+
+.active hr {
   @apply block
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   @apply hidden
 }
 
-@media (max-width:740px){
-  .active p{
+@media (max-width:740px) {
+  .active p {
     @apply text-white bg-primary
   }
 }
@@ -29,17 +30,22 @@
 
 .service-main .services .one {
   border: 1px solid rgb(76, 76, 76);
-  background-color: transparent;
+  background-color: white;
   border-radius: 25px;
   height: 200px;
-  
+
 }
 
 
 .service-main .services .one h1 {
-  padding: 1.5rem;
+  padding: 1rem;
   font-size: .9rem;
   font-weight: bold;
+  cursor: pointer;
+
+  text-decoration: underline;
+  margin: 0.8rem;
+  color: rgb(38, 109, 241);
 }
 
 
@@ -89,7 +95,7 @@
   --s: 80px;
   /* the size of the corner*/
   /* width: 200px; */
-  max-width: 327px;
+  max-width: 337px;
   border-radius: var(--r);
 
   --_m: /calc(2 * var(--r)) calc(2 * var(--r)) radial-gradient(#000 70%,
