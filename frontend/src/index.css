@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  font-family: Outfit;
+}
+.active hr{
+  @apply block
+}
+
+::-webkit-scrollbar{
+  @apply hidden
+}
+
+@media (max-width:740px){
+  .active p{
+    @apply text-white bg-primary
+  }
+}
+
+/* Styling for the Publications Page */
+.service-main .services {
+  position: relative;
+
+}
+
+.service-main .services .one {
+  border: 1px solid rgb(76, 76, 76);
+  background-color: transparent;
+  border-radius: 25px;
+  height: 200px;
+  
+}
+
+
+.service-main .services .one h1 {
+  padding: 1.5rem;
+  font-size: .9rem;
+  font-weight: bold;
+}
+
+
+.service-main .services .one {
+  min-width: 327px;
+  max-width: 327px;
+}
+
+.service-main .services .two {
+  width: 250px;
+  height: 50px;
+  background-color: rgba(77, 77, 77, 0.3);
+  border-radius: 25px;
+
+}
+
+.service-main .services .two {
+  position: absolute;
+  /* top: 60%; */
+  /* left: 10%; */
+  top: 111px;
+  left: 40px;
+}
+
+.service-main .services .three {
+  width: 290px;
+  height: 100px;
+  border-radius: 25px;
+  background-color: rgb(76, 76, 76);
+
+}
+
+.service-main .services .three {
+  position: absolute;
+  top: 130px;
+  /* left: 5%; */
+  left: 20px;
+}
+
+
+.service-main .services .img-box {
+
+  height: 250px;
+  border-radius: 25px;
+  --r: 25px;
+  /* the radius */
+  --s: 80px;
+  /* the size of the corner*/
+  /* width: 200px; */
+  max-width: 327px;
+  border-radius: var(--r);
+
+  --_m: /calc(2 * var(--r)) calc(2 * var(--r)) radial-gradient(#000 70%,
+      #0000 72%) no-repeat;
+
+  mask: right 0 bottom calc(var(--s) + var(--r)) var(--_m),
+    right calc(var(--s) + var(--r)) bottom 0 var(--_m),
+    radial-gradient(var(--s) at 100% 100%, #0000 99%, #000 101%) calc(-1 * var(--r)) calc(-1 * var(--r)) no-repeat,
+    conic-gradient(from 90deg at calc(100% - var(--s) - 2 * var(--r)) calc(100% - var(--s) - 2 * var(--r)),
+      #0000 25%,
+      #000 0);
+}
+
+
+
+.service-main .services .img-box {
+  position: relative;
+  bottom: 50px;
+}
+
+
+.service-main .services .circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: rgb(29, 41, 57);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-main .services .circle {
+  position: absolute;
+  top: 320px;
+  left: 240px;
+}
