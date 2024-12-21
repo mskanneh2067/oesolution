@@ -5,26 +5,23 @@ import { useContext, useState } from "react";
 import { assets } from "../../assets/assets";
 import { AppContext } from "../../context/AppContext";
 const Header = () => {
-
-  const {token,setToken,userData} = useContext(AppContext)
+  const { token, setToken, userData } = useContext(AppContext);
   const [menu, setMenu] = useState(false);
   const navigate = useNavigate();
 
-
-  const logout = ()=>{
-    setToken(false)
-    localStorage.removeItem('token')
-  }
+  const logout = () => {
+    setToken(false);
+    localStorage.removeItem("token");
+  };
   return (
     <div className="flex items-center justify-between text-sm py-4 mb-5 border-b border-b-gray-400">
-      <NavLink to='/'>
-
-      <div className="flex items-center space-x-5">
-        <img src={assets.logo} alt="" className="w-14"/>
-        <h1 className="font-extrabold text-xl italic font-sans ">
-          OE Solutions
-        </h1>
-      </div>
+      <NavLink to="/">
+        <div className="flex items-center space-x-5">
+          <img src={assets.logo} alt="" className="w-14" />
+          <h1 className="hidden md:flex font-extrabold text-xl italic font-sans ">
+            OE Solutions
+          </h1>
+        </div>
       </NavLink>
       <div>
         <ul className="hidden md:flex items-start gap-5 font-medium">
@@ -55,10 +52,7 @@ const Header = () => {
                 >
                   My Appoitment
                 </p>
-                <p
-                  onClick={logout}
-                  className="hover:text-black cursor-pointer"
-                >
+                <p onClick={logout} className="hover:text-black cursor-pointer">
                   Logout
                 </p>
               </div>
@@ -66,7 +60,7 @@ const Header = () => {
           </div>
         ) : (
           <button
-            className="hidden text-white px-8 py-3 rounded-full font-light md:block bg-blue-700 "
+            className=" text-white px-8 py-3 rounded-full font-light md:block bg-blue-700 "
             onClick={() => navigate("/login")}
           >
             Create account
@@ -87,11 +81,9 @@ const Header = () => {
         >
           <div className="flex items-center justify-between px-5 py-6">
             <div className="flex items-center space-x-5">
-              <FaUserDoctor size={30} className="text-primary" />
-              <h1 className="font-extrabold text-xl italic font-sans text-red-600">
-                eAppointment
-              </h1>
+              <img src={assets.logo} alt="" className="w-14" />
             </div>
+
             <img
               src={assets.cross_icon}
               alt=""
@@ -105,9 +97,10 @@ const Header = () => {
                 key={item.id}
                 to={item.menuLink}
                 onClick={() => setMenu(false)}
-                
               >
-                <p className="px-4 py-2 rounded inline-block">{item.menuItem}</p>
+                <p className="px-4 py-2 rounded inline-block">
+                  {item.menuItem}
+                </p>
               </NavLink>
             ))}
           </ul>
